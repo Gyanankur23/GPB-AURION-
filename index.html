@@ -178,12 +178,14 @@
 
     <div class="container">
         <div id="chatbox" class="chatbox" role="log" aria-live="polite"></div>
-        <div class="input-area">
+        
+        <!-- 🔥 Added missing form element -->
+        <form id="chat-form" class="input-area">
             <input id="chatInput" type="text" placeholder="Ask me anything..." />
-            <button id="sendButton">
+            <button id="sendButton" type="submit">
                 <i class="fas fa-paper-plane"></i>
             </button>
-        </div>
+        </form>
     </div>
 
     <script src="main.js"></script>
