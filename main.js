@@ -1,14 +1,20 @@
 console.log("Hello World!");
 
-// Wait for the page to fully load before running scripts
+// Run code only after the page is fully loaded
 document.addEventListener("DOMContentLoaded", () => {
+    // 🎨 Dark Mode Toggle with Persistence
     const toggleButton = document.querySelector(".header button");
     const body = document.body;
     const chatForm = document.getElementById("chat-form");
     const chatInput = document.getElementById("chatInput");
     const chatOutput = document.getElementById("chatbox");
 
-    // 🌓 Dark Mode Toggle with Persistence
+    // Check if elements exist before adding event listeners
+    if (!toggleButton || !chatForm || !chatInput || !chatOutput) {
+        console.error("❌ Missing essential elements in the HTML!");
+        return;
+    }
+
     function toggleDarkMode() {
         body.classList.toggle("dark-mode");
         localStorage.setItem("theme", body.classList.contains("dark-mode") ? "dark" : "light");
@@ -18,20 +24,10 @@ document.addEventListener("DOMContentLoaded", () => {
     if (localStorage.getItem("theme") === "dark") {
         body.classList.add("dark-mode");
     }
-
-    // Ensure toggle button exists before adding event listener
-    if (toggleButton) {
-        toggleButton.addEventListener("click", toggleDarkMode);
-    } else {
-        console.error("❌ Dark mode toggle button not found!");
-    }
+    
+    toggleButton.addEventListener("click", toggleDarkMode);
 
     // 📝 Chat Functionality
-    if (!chatForm || !chatInput || !chatOutput) {
-        console.error("❌ Chat elements missing!");
-        return;
-    }
-
     chatForm.addEventListener("submit", async (event) => {
         event.preventDefault(); // Prevent page reload
 
