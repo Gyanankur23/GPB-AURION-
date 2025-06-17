@@ -186,67 +186,6 @@
         </div>
     </div>
 
-    <script>
-        const sendButton = document.getElementById("sendButton");
-        const chatInput = document.getElementById('chatInput');
-        const chatbox = document.getElementById('chatbox');
-
-        async function displayMessage(message, isUser) {
-            const msgElem = document.createElement('div');
-            msgElem.textContent = message;
-            msgElem.className = `chat-message ${isUser ? 'user-message' : 'assistant-message'}`;
-            chatbox.appendChild(msgElem);
-            chatbox.scrollTop = chatbox.scrollHeight;
-        }
-
-        async function callApi(apiUrl, prompt) {
-            chatInput.value = "Typing...";
-            chatInput.disabled = true;
-            sendButton.disabled = true;
-
-            const response = await fetch(apiUrl, {
-                method: 'POST',
-                headers: {'Content-Type': 'application/json'},
-                body: JSON.stringify({ prompt })
-            });
-
-            chatInput.value = "";
-            chatInput.disabled = false;
-            sendButton.disabled = false;
-            chatInput.focus();
-
-            return response.json();
-        }
-
-        function toggleDarkMode() {
-            document.body.classList.toggle("dark-mode");
-        }
-
-        chatInput.focus();
-
-        sendButton.addEventListener('click', async () => {
-            const message = chatInput.value.trim();
-            if (!message) return;
-
-            displayMessage(message, true);
-            chatInput.value = '';
-
-            const apiUrl = message.startsWith('/image') ?
-                'https://backend.buildpicoapps.com/aero/run/image-generation-api?pk=YOUR_API_KEY' :
-                'https://backend.buildpicoapps.com/aero/run/llm-api?pk=YOUR_API_KEY';
-
-            try {
-                const data = await callApi(apiUrl, message);
-                if (data.status === 'success') {
-                    displayMessage(data.text, false);
-                } else {
-                    displayMessage('⚠️ An error occurred. Please try again.', false);
-                }
-            } catch (error) {
-                console.error('Error:', error);
-                displayMessage('⚠️ An error occurred. Please try again.', false);
-            }
-        });
-<script src="main.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
