@@ -47,3 +47,5 @@ app.post("/chat", async (req, res) => {
 app.listen(PORT, () => {
   console.log(`✅ Server running on http://localhost:${PORT}`);
 });
+
+console.log("🔑 API Key Loaded:", process.env.OPENAI_API_KEY ? "✅ Yes" : "❌ No");
