@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
         chatInput.value = ""; // Clear input
 
         try {
-            const response = await fetch("http://localhost:3000/chat", {
+            const response = await fetch("http://localhost:3000/chatbot", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ prompt: userMessage }),
