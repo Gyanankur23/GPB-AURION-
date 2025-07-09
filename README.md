@@ -63,12 +63,16 @@ streamlit run Aurion.py
 ### 🗂️ Conversation History Page
 ![Conversation History](assets/screenshots/Screenshot%20(371).png)
 
---- 
+---
 
 ## 👨‍💻 Creator
 
-### Built by Gyanankur Baruah
-📫 LinkedIn | 🌐 GitHub
+Built by **Gyanankur Baruah**  
+🔗 [LinkedIn](https://www.linkedin.com/in/gyanankurbaruah)  
+💻 [GitHub](https://github.com/Gyanankur23)
+
+Feel free to connect, collaborate, or explore more of my work!
+
 
 ## 🪪 License
 
