@@ -28,7 +28,7 @@ GPB Aurion is a Streamlit-powered conversational AI designed to assist students 
 
 ## 📁 Project Structure
 
-```bash
+```bash
 GPB_Aurion/ ├── Aurion.py                  # Main chatbot logic ├── .env                       # API keys (excluded from Git) ├── .gitignore                 # Prevents pushing sensitive files ├── conversation_history.txt   # Logs all user-bot interactions ├── pages/ │   ├── About_Creator.py       # Info page │   └── Conversation_History.py# View + clear chat history ├── assets/ │   └── screenshots/           # UI screenshots for documentation ├── requirements.txt           # Python dependencies └── README.md                  # This file
 ```
 ---
