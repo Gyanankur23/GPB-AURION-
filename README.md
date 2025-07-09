@@ -1,6 +1,3 @@
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Gyanankur%20Baruah-blue?logo=linkedin)](https://www.linkedin.com/in/gyanankur-baruah-797205338)
-[![GitHub](https://img.shields.io/badge/GitHub-Gyanankur23-black?logo=github)](https://github.com/Gyanankur23)
-
 # 💬 GPB Aurion — Academic & Career Chatbot
 
 GPB Aurion is a Streamlit-powered conversational AI designed to assist students with academic queries, career guidance, and project support. Built using LangChain and Gemini API, it offers a clean UI, typewriter-style responses, and persistent conversation history.
@@ -70,9 +67,11 @@ streamlit run Aurion.py
 
 ## 👨‍💻 Creator
 
-Built by **Gyanankur Baruah**  
-🔗 [LinkedIn](https://www.linkedin.com/in/gyanankurbaruah)  
-💻 [GitHub](https://github.com/Gyanankur23)
+Built by **Gyanankur Baruah** 
+ 
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Gyanankur%20Baruah-blue?logo=linkedin)](https://www.linkedin.com/in/gyanankur-baruah-797205338)
+
+[![GitHub](https://img.shields.io/badge/GitHub-Gyanankur23-black?logo=github)](https://github.com/Gyanankur23)
 
 Feel free to connect, collaborate, or explore more of my work!
 
