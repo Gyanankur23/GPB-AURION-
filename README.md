@@ -4,6 +4,11 @@ GPB Aurion is a Streamlit-powered conversational AI designed to assist students 
 
 ---
 
+## Live link 
+
+- https://gowqrvufjni5pwyd2hbszm.streamlit.app/
+---
+
 ## 🚀 Features
 
 - 🧠 Gemini 2.5 Flash integration via LangChain
